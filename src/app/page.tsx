@@ -81,12 +81,10 @@ export default function Home() {
                 <Image className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} />
               </div>
 
-              <h1 className="text-5xl lg:text-6xl font-bold text-[#1e1e1e] mb-6 leading-tight">
-                Ditch the Glasses.
-                <br />
-                <span className="text-[#3399FF]">Real Vision Correction,</span>
-                <br />
-                Not Just Magnification.
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1e1e1e] mb-6 leading-tight">
+                <div className="whitespace-nowrap">Ditch the Glasses.</div>
+                <div className="whitespace-nowrap text-[#3399FF]">Real Vision Correction,</div>
+                <div className="whitespace-nowrap">Not Just Magnification.</div>
               </h1>
 
               <p className="text-xl text-gray-700 mb-8 max-w-2xl">
