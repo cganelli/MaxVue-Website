@@ -84,7 +84,7 @@ export default function Home() {
               <h1 className="text-5xl lg:text-6xl font-bold text-[#1e1e1e] mb-6 leading-tight">
                 Ditch the Glasses.
                 <br />
-                <span className="text-[#3399FF]">Real Vision Correction</span> for Your Phone - Not Just Magnification
+                <span className="text-[#3399FF]">Real Vision Correction</span> <span className="text-2xl lg:text-3xl">for Your Phone - Not Just Magnification</span>
               </h1>
 
               <p className="text-xl text-gray-700 mb-8 max-w-2xl">
@@ -141,33 +141,11 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#1e1e1e] mb-6">
-              Why Not Just Use Built-In Zoom?
+              Why Not Just Use Built-In Zoom or Magnifier Apps?
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Other Solutions */}
-            <div className="bg-[#eaf1fd] rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-[#1e1e1e] mb-6 flex items-center">
-                <Smartphone className="w-8 h-8 mr-3 text-gray-600" />
-                Other Solutions
-              </h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">Phone zoom makes text bigger but doesn't fix blurry focus</span>
-                </li>
-                <li className="flex items-start">
-                  <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">Accessibility features break app layouts and need constant adjustment</span>
-                </li>
-                <li className="flex items-start">
-                  <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">Reading glasses you forget, lose, or don't have when needed</span>
-                </li>
-              </ul>
-            </div>
-
             {/* MaxVue Advantage */}
             <div className="bg-[#1D4262] rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
@@ -186,6 +164,32 @@ export default function Home() {
                 <li className="flex items-start">
                   <Check className="w-6 h-6 text-[#3399FF] mt-0.5 mr-3 flex-shrink-0" />
                   <span className="text-lg text-white">Always available - your phone becomes your glasses</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Other Solutions */}
+            <div className="bg-[#eaf1fd] rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-[#1e1e1e] mb-6 flex items-center">
+                <Smartphone className="w-8 h-8 mr-3 text-gray-600" />
+                Other Solutions
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-lg text-gray-700">Phone zoom makes text bigger but doesn't fix blurry focus</span>
+                </li>
+                <li className="flex items-start">
+                  <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-lg text-gray-700">Magnifier apps provide basic enlargement without true vision correction</span>
+                </li>
+                <li className="flex items-start">
+                  <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-lg text-gray-700">Accessibility features cause text to fall off the page and need constant adjustment</span>
+                </li>
+                <li className="flex items-start">
+                  <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-lg text-gray-700">Reading glasses you forget, lose, or don't have when needed</span>
                 </li>
               </ul>
             </div>
@@ -216,8 +220,8 @@ export default function Home() {
                 Calibrate Your Vision
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Our interactive vision test uses real-time blur adjustment on sample text to find your optimal 
-                correction strength. Covers the full presbyopia range from +0.00D to +3.50D. Skip the test by 
+                Our interactive vision test uses real-time blur adjustment to find your optimal 
+                correction strength. Covers the full presbyopia range from +0.00D to +3.50D. You can skip the test by 
                 entering your existing prescription if known.
               </p>
             </div>
@@ -417,25 +421,97 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Download CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#3399FF] to-[#1D4262]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to See Clearly Without Glasses?
-          </h2>
-          <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-            Join thousands who've ditched their reading glasses. Download MaxVue now and experience 
-            real vision correction on your phone.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-[#3399FF] hover:bg-gray-100 px-8 py-6 text-lg rounded-xl flex items-center space-x-2 transition-all">
-              <Download className="w-6 h-6" />
-              <span>Download for iOS</span>
-            </Button>
-            <Button className="bg-white/20 text-white hover:bg-white/30 px-8 py-6 text-lg rounded-xl flex items-center space-x-2 transition-all border-2 border-white/50">
-              <Download className="w-6 h-6" />
-              <span>Download for Android</span>
-            </Button>
+      {/* Testimonials Section */}
+      <section className="py-10 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-[#1e1e1e] mb-4">
+              What <span className="text-[#3399FF]">MaxVue fans</span> say
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-[#3399FF] fill-current"
+                      />
+                    ))}
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    "Finally, I can read emails without constantly searching for
+                    my reading glasses. MaxVue has transformed how I use my
+                    phone."
+                  </p>
+                </div>
+                <div>
+                  <div className="font-bold text-[#1e1e1e]">
+                    Andrew B., Greenwich, CT
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-[#3399FF] fill-current"
+                      />
+                    ))}
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    "I love when my kids send me texts with their photos. I love
+                    it even more that I can see them without glasses."
+                  </p>
+                </div>
+                <div>
+                  <div className="font-bold text-[#1e1e1e]">
+                    Viviana G.,
+                    <br />
+                    North Miami, FL
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-[#3399FF] fill-current"
+                      />
+                    ))}
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                    "MaxVue makes doing the NY Times Crossword puzzle on my
+                    phone so much easier. The clarity is perfect for my
+                    presbyopia."
+                  </p>
+                </div>
+                <div>
+                  <div className="font-bold text-[#1e1e1e]">
+                    Kristen L., Scarsdale, NY
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
