@@ -567,7 +567,7 @@ export default function FAQPage() {
       {/* Footer */}
       <footer className="bg-[#1e1e1e] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="mb-4">
                 <NextImage
@@ -596,7 +596,7 @@ export default function FAQPage() {
                 </li>
                 <li>
                   <Link
-                    href="/legal#privacy"
+                    href="/legal#privacy-policy"
                     className="text-white hover:text-[#3399FF] transition-colors font-bold"
                   >
                     Privacy Policy
@@ -604,7 +604,7 @@ export default function FAQPage() {
                 </li>
                 <li>
                   <Link
-                    href="/legal#terms"
+                    href="/legal#terms-of-use"
                     className="text-white hover:text-[#3399FF] transition-colors font-bold"
                   >
                     Terms of Use
@@ -612,9 +612,29 @@ export default function FAQPage() {
                 </li>
               </ul>
             </div>
+            <div className="flex flex-col justify-end space-y-4">
+              <a href="#" className="hover:opacity-80 transition-opacity">
+                <NextImage
+                  src="/Apple-app-store.png"
+                  alt="Download on the App Store"
+                  width={150}
+                  height={44}
+                  className="w-[150px] h-auto"
+                />
+              </a>
+              <a href="#" className="hover:opacity-80 transition-opacity">
+                <NextImage
+                  src="/Google-play-store.png"
+                  alt="Get it on Google Play"
+                  width={150}
+                  height={44}
+                  className="w-[150px] h-auto"
+                />
+              </a>
+            </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-            <p className="text-gray-400 font-bold">
+            <p className="text-white font-bold">
               © 2025 MaxVue. All rights reserved.
             </p>
           </div>
