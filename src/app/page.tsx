@@ -643,43 +643,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-10 bg-[#3399FF]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to See Clearly?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of users who have already transformed their digital
-            experience with MaxVue.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="bg-[#3399FF] hover:bg-[#1D4262] text-white px-6 py-3 rounded-xl flex items-center space-x-3 transition-all cursor-pointer shadow-lg">
-              <div className="flex flex-col items-center">
-                <span className="text-2xl">🍎</span>
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="text-xs text-gray-200">Download on the</span>
-                <span className="text-lg font-semibold">App Store</span>
-              </div>
-            </div>
-            <div className="bg-[#3399FF] hover:bg-[#1D4262] text-white px-6 py-3 rounded-xl flex items-center space-x-3 transition-all cursor-pointer shadow-lg">
-              <div className="flex flex-col items-center">
-                <span className="text-2xl">▶️</span>
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="text-xs text-gray-200">GET IT ON</span>
-                <span className="text-lg font-semibold">Google Play</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-[#1e1e1e] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="mb-4">
                 <NextImage
@@ -696,7 +663,7 @@ export default function Home() {
                 See clearly without glasses.
               </p>
             </div>
-            <div>
+            <div className="flex flex-col justify-end">
               <ul className="space-y-2">
                 <li>
                   <a
@@ -723,6 +690,26 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className="flex flex-col justify-end space-y-4">
+              <a href="#" className="hover:opacity-80 transition-opacity">
+                <NextImage
+                  src="/Apple-app-store.png"
+                  alt="Download on the App Store"
+                  width={150}
+                  height={44}
+                  className="w-[150px] h-auto"
+                />
+              </a>
+              <a href="#" className="hover:opacity-80 transition-opacity">
+                <NextImage
+                  src="/Google-play-store.png"
+                  alt="Get it on Google Play"
+                  width={150}
+                  height={44}
+                  className="w-[150px] h-auto"
+                />
+              </a>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
