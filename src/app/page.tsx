@@ -84,7 +84,7 @@ export default function Home() {
               <h1 className="text-5xl lg:text-6xl font-bold text-[#1e1e1e] mb-6 leading-tight">
                 Ditch the Glasses.
                 <br />
-                <span className="text-[#3399FF]">Real Vision Correction</span> <span className="text-2xl lg:text-3xl">for Your Phone - Not Just Magnification</span>
+                <span className="text-[#3399FF]">Real Vision Correction,</span> <span className="text-5xl lg:text-6xl">Not Just Magnification</span>
               </h1>
 
               <p className="text-xl text-gray-700 mb-8 max-w-2xl">
@@ -155,15 +155,15 @@ export default function Home() {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <Check className="w-6 h-6 text-[#3399FF] mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-white">Applies real optical correction like prescription lenses</span>
+                  <span className="text-xl text-white">Applies real optical correction like prescription lenses</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-6 h-6 text-[#3399FF] mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-white">Works automatically across all phone content without layout distortion</span>
+                  <span className="text-xl text-white">Works automatically across all phone content without layout distortion</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-6 h-6 text-[#3399FF] mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-white">Always available - your phone becomes your glasses</span>
+                  <span className="text-xl text-white">Always available - your phone becomes your glasses</span>
                 </li>
               </ul>
             </div>
@@ -177,19 +177,15 @@ export default function Home() {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">Phone zoom makes text bigger but doesn't fix blurry focus</span>
+                  <span className="text-xl text-gray-700">Phone zoom makes text bigger but doesn't fix blurry focus</span>
                 </li>
                 <li className="flex items-start">
                   <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">Magnifier apps provide basic enlargement without true vision correction</span>
+                  <span className="text-xl text-gray-700">Accessibility features and magnifier apps cause text to fall off the page and need constant adjustment</span>
                 </li>
                 <li className="flex items-start">
                   <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">Accessibility features cause text to fall off the page and need constant adjustment</span>
-                </li>
-                <li className="flex items-start">
-                  <ChevronRight className="w-6 h-6 text-gray-500 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-lg text-gray-700">Reading glasses you forget, lose, or don't have when needed</span>
+                  <span className="text-xl text-gray-700">Reading glasses you forget, lose, or don't have when needed</span>
                 </li>
               </ul>
             </div>
@@ -221,7 +217,7 @@ export default function Home() {
               </h3>
               <p className="text-gray-700 leading-relaxed">
                 Our interactive vision test uses real-time blur adjustment to find your optimal 
-                correction strength. Covers the full presbyopia range from +0.00D to +3.50D. You can skip the test by 
+                correction strength. Covers the full presbyopia range from +0.00D to +3.50D. Or, skip the test by 
                 entering your existing prescription if known.
               </p>
             </div>
@@ -272,10 +268,10 @@ export default function Home() {
                 <Glasses className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
+                <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2">
                   Prescription-Strength Correction
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-lg text-gray-700">
                   0.00D to +3.5D range covering full presbyopia spectrum
                 </p>
               </div>
@@ -286,10 +282,10 @@ export default function Home() {
                 <ScanLine className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
+                <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2">
                   Advanced Image Processing
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-lg text-gray-700">
                   Edge enhancement and clarity optimization algorithms
                 </p>
               </div>
@@ -300,10 +296,10 @@ export default function Home() {
                 <Monitor className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
+                <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2">
                   System-Wide Overlay
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-lg text-gray-700">
                   Preserves app layouts while correcting vision
                 </p>
               </div>
@@ -314,10 +310,10 @@ export default function Home() {
                 <Eye className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
+                <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2">
                   Multiple Vision Conditions
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-lg text-gray-700">
                   Works with presbyopia, myopia, and mild astigmatism
                 </p>
               </div>
@@ -328,10 +324,10 @@ export default function Home() {
                 <Gauge className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
+                <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2">
                   60+ FPS Performance
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-lg text-gray-700">
                   Real-time processing without lag or battery drain
                 </p>
               </div>
@@ -342,10 +338,10 @@ export default function Home() {
                 <Smartphone className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
+                <h3 className="text-2xl font-semibold text-[#1e1e1e] mb-2">
                   Universal App Support
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-lg text-gray-700">
                   Works across all apps without individual setup
                 </p>
               </div>
@@ -369,10 +365,10 @@ export default function Home() {
                 <div className="flex items-start space-x-4">
                   <Users className="w-6 h-6 text-[#3399FF] mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-[#1e1e1e] mb-2">
+                    <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
                       Adults 40+ with Presbyopia
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-lg text-gray-700">
                       Struggling with age-related farsightedness that makes phone text blurry
                     </p>
                   </div>
@@ -381,10 +377,10 @@ export default function Home() {
                 <div className="flex items-start space-x-4">
                   <Eye className="w-6 h-6 text-[#3399FF] mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-[#1e1e1e] mb-2">
+                    <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
                       Mild Prescription Wearers
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-lg text-gray-700">
                       Anyone with mild prescriptions who doesn't want to wear glasses for phone use
                     </p>
                   </div>
@@ -395,10 +391,10 @@ export default function Home() {
                 <div className="flex items-start space-x-4">
                   <Glasses className="w-6 h-6 text-[#3399FF] mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-[#1e1e1e] mb-2">
+                    <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
                       Forgetful Glass Wearers
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-lg text-gray-700">
                       People who lose reading glasses or don't have them when needed
                     </p>
                   </div>
@@ -407,10 +403,10 @@ export default function Home() {
                 <div className="flex items-start space-x-4">
                   <Smartphone className="w-6 h-6 text-[#3399FF] mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-[#1e1e1e] mb-2">
+                    <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
                       Zoom Fatigue Sufferers
                     </h3>
-                    <p className="text-gray-700">
+                    <p className="text-lg text-gray-700">
                       Anyone tired of constantly zooming and adjusting text size
                     </p>
                   </div>
