@@ -84,7 +84,9 @@ export default function Home() {
               <h1 className="text-5xl lg:text-6xl font-bold text-[#1e1e1e] mb-6 leading-tight">
                 Ditch the Glasses.
                 <br />
-                <span className="text-[#3399FF]">Real Vision Correction,</span> <span className="text-5xl lg:text-6xl">Not Just Magnification</span>
+                <span className="text-[#3399FF]">Real Vision Correction,</span>
+                <br />
+                Not Just Magnification.
               </h1>
 
               <p className="text-xl text-gray-700 mb-8 max-w-2xl">
