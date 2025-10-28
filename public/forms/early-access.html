@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>MaxVue Early Access Form</title>
+</head>
+<body>
+  <!-- 
+    This static form ensures Netlify Forms detection during build.
+    The actual form submission is handled by the React component.
+  -->
+  <form 
+    name="early-access" 
+    method="POST" 
+    data-netlify="true" 
+    netlify-honeypot="company"
+    action="/success"
+  >
+    <input type="hidden" name="form-name" value="early-access" />
+    <p>
+      <label>First Name: <input type="text" name="first_name" required /></label>
+    </p>
+    <p>
+      <label>Last Name: <input type="text" name="last_name" required /></label>
+    </p>
+    <p>
+      <label>Email Address: <input type="email" name="email" required /></label>
+    </p>
+    <p>
+      <label>Smartphone: 
+        <select name="smartphone" required>
+          <option value="">Select…</option>
+          <option>iPhone</option>
+          <option>Android</option>
+        </select>
+      </label>
+    </p>
+    <p>
+      <label>Do you wear multifocal contacts?
+        <select name="multifocal">
+          <option value="">Prefer not to say</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="hardware_interest" value="yes" />
+        Also join the Hardware Add-Ons waitlist
+      </label>
+    </p>
+    <p style="position: absolute; left: -9999px;">
+      <label>Company (leave blank): <input type="text" name="company" /></label>
+    </p>
+    <p>
+      <button type="submit">Join Early Access</button>
+    </p>
+  </form>
+</body>
+</html>

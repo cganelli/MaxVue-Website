@@ -15,8 +15,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MaxVue - Digital Vision Correction",
-  description: "AI-powered vision correction app that makes your screen match your eyesight—no reading glasses needed.",
+  title: "MaxVue - Coming Soon | Digital Vision Correction",
+  description: "Join the waitlist for MaxVue - Real prescription-strength vision correction for your phone. Ditch the reading glasses. Launching Q2 2025.",
+  keywords: ["vision correction", "presbyopia", "reading glasses alternative", "digital vision", "smart glasses", "optical correction"],
+  openGraph: {
+    title: "MaxVue - Coming Soon | Digital Vision Correction",
+    description: "Real prescription-strength vision correction for your phone. Join the waitlist for early access.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MaxVue - Coming Soon | Digital Vision Correction",
+    description: "Real prescription-strength vision correction for your phone. Join the waitlist for early access.",
+  },
   icons: {
     icon: "/favicon.png",
   },

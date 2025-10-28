@@ -5,9 +5,21 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Enable Netlify Forms
+[forms]
+  # Spam filtering settings
+  spam_action = "block"
+
 [[headers]]
   for = "/*"
   [headers.values]
     Cache-Control = "no-cache, no-store, must-revalidate"
     Pragma = "no-cache"
     Expires = "0"
+
+# Redirect rules for form submissions (optional fallback)
+[[redirects]]
+  from = "/success"
+  to = "/?submitted=true"
+  status = 200
+  force = false
