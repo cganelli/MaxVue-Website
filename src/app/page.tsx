@@ -31,9 +31,17 @@ import JoinEarlyAccessForm from "@/components/JoinEarlyAccessForm";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#eaf1fd]">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#eaf1fd] py-10">
+    <>
+      {/* Skip link for keyboard users */}
+      <a href="#main-content"
+         className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-white focus:text-black focus:p-2 focus:rounded focus:z-50">
+        Skip to main content
+      </a>
+      
+      <div className="min-h-screen bg-[#eaf1fd]">
+        <main id="main-content">
+          {/* Hero Section */}
+          <section className="relative overflow-hidden bg-[#eaf1fd] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left content */}
@@ -72,7 +80,8 @@ export default function Home() {
               </p>
 
               <div className="mb-8">
-                <a href="#join-waitlist" className="inline-block bg-[#3399FF] px-6 py-3 font-semibold text-white transition hover:bg-[#1D4262] rounded-2xl shadow-lg">
+                <a href="#join-waitlist" 
+                   className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80">
                   Join the Waitlist
                 </a>
               </div>
@@ -216,7 +225,8 @@ export default function Home() {
             <p className="text-gray-700 mb-6">
               Results vary. People with mild near-vision blur or multifocal contacts often see the most benefit.
             </p>
-            <a href="#join-waitlist" className="inline-block rounded-2xl bg-[#3399FF] px-6 py-3 font-semibold text-white transition hover:bg-[#1D4262] shadow-lg">
+            <a href="#join-waitlist" 
+               className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80">
               Join The Waitlist
             </a>
           </div>
@@ -241,7 +251,8 @@ export default function Home() {
               If you're interested in accessory hardware when it's ready, join the waitlist.
             </p>
             <div className="mb-4 text-center">
-              <a href="#join-waitlist" className="inline-block rounded-2xl bg-[#3399FF] px-6 py-3 font-semibold text-white transition hover:bg-[#1D4262] shadow-lg">
+              <a href="#join-waitlist" 
+                 className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80">
                 Join the Waitlist
               </a>
             </div>
@@ -584,8 +595,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#1e1e1e] text-white py-16">
+        </main>
+
+        {/* Footer */}
+        <footer role="contentinfo" className="bg-[#1e1e1e] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <div className="mb-2">
@@ -604,7 +617,8 @@ export default function Home() {
             <p className="text-white mb-4 text-lg">
               Be one of the first to try MaxVue. Help shape what's next.
             </p>
-            <a href="#join-waitlist" className="inline-block rounded-2xl bg-[#3399FF] px-6 py-3 font-semibold text-white transition hover:bg-[#1D4262] shadow-lg mb-6">
+            <a href="#join-waitlist" 
+               className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80 mb-6">
               Join the Waitlist
             </a>
             
@@ -632,6 +646,7 @@ export default function Home() {
         <input type="checkbox" name="hardware_interest" />
         <button type="submit">Submit</button>
       </form>
-    </div>
+      </div>
+    </>
   );
 }

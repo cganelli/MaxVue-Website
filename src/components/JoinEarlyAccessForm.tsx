@@ -7,9 +7,9 @@
  * Features:
  * - Netlify Forms integration with XHR submission
  * - Inline thank-you message (no redirect)
- * - Hardware waitlist opt-in checkbox
  * - Honeypot spam protection
  * - Form validation and error handling
+ * - WCAG 2.1 AA compliant with proper labels and ARIA attributes
  */
 
 'use client';
@@ -30,6 +30,7 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
   const [done, setDone] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement | null>(null);
+  const successRef = useRef<HTMLDivElement | null>(null);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -53,6 +54,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
       if (resp.ok) {
         setDone(true);
         form.reset();
+        // Focus on success message for screen readers
+        setTimeout(() => successRef.current?.focus(), 100);
       } else {
         setError('Something went wrong. Please try again.');
       }
@@ -65,7 +68,12 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
 
   if (done) {
     return (
-      <div className="rounded-2xl border p-6 shadow-sm bg-white/70 backdrop-blur">
+      <div 
+        ref={successRef}
+        role="status" 
+        aria-live="polite" 
+        tabIndex={-1}
+        className="rounded-2xl border p-6 shadow-sm bg-white/70 backdrop-blur focus:outline-none focus:ring-2 focus:ring-[#1D4262]">
         <h3 className="text-xl font-semibold">You're in. ✅</h3>
         <p className="mt-2 text-sm text-gray-700">
           Thanks for joining the MaxVue Early Access. We'll email only about MaxVue—no spam, unsubscribe anytime.
@@ -82,58 +90,106 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
   return (
     <form
       ref={formRef}
+      id="waitlist-form"
       name="early-access"
       method="POST"
       data-netlify="true"
       netlify-honeypot="company"
+      noValidate
       className="rounded-2xl border p-6 shadow-sm bg-white/70 backdrop-blur"
       onSubmit={onSubmit}
     >
       {/* hidden inputs for Netlify */}
       <input type="hidden" name="form-name" value="early-access" />
       <p className="hidden">
-        <label>
-          Don't fill this out if you're human: <input name="company" />
+        <label htmlFor="company-field">
+          Don't fill this out if you're human: <input id="company-field" name="company" tabIndex={-1} />
         </label>
       </p>
 
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         <div>
-          <label className="block text-base font-medium">First name</label>
-          <input name="first_name" required className="mt-1 w-full rounded-xl border p-2" />
+          <label htmlFor="first-name" className="block text-base font-medium">
+            First name
+          </label>
+          <input 
+            id="first-name"
+            name="first_name" 
+            type="text"
+            required 
+            aria-required="true"
+            className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent" 
+          />
         </div>
         <div>
-          <label className="block text-base font-medium">Last name</label>
-          <input name="last_name" required className="mt-1 w-full rounded-xl border p-2" />
+          <label htmlFor="last-name" className="block text-base font-medium">
+            Last name
+          </label>
+          <input 
+            id="last-name"
+            name="last_name" 
+            type="text"
+            required 
+            aria-required="true"
+            className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent" 
+          />
         </div>
         <div className="md:col-span-2">
-          <label className="block text-base font-medium">Email address</label>
-          <input type="email" name="email" required className="mt-1 w-full rounded-xl border p-2" />
+          <label htmlFor="email-address" className="block text-base font-medium">
+            Email address
+          </label>
+          <input 
+            id="email-address"
+            name="email" 
+            type="email" 
+            required 
+            aria-required="true"
+            className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent" 
+          />
         </div>
         <div>
-          <label className="block text-base font-medium">Smartphone</label>
-          <select name="smartphone" required className="mt-1 w-full rounded-xl border p-2">
+          <label htmlFor="smartphone" className="block text-base font-medium">
+            Smartphone
+          </label>
+          <select 
+            id="smartphone"
+            name="smartphone" 
+            required 
+            aria-required="true"
+            className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent">
             <option value="">Select…</option>
-            <option>iPhone</option>
-            <option>Android</option>
+            <option value="iPhone">iPhone</option>
+            <option value="Android">Android</option>
           </select>
         </div>
         <div>
-          <label className="block text-base font-medium">Do you wear multifocal contacts?</label>
-          <select name="multifocal" required className="mt-1 w-full rounded-xl border p-2">
+          <label htmlFor="multifocal" className="block text-base font-medium">
+            Do you wear multifocal contacts?
+          </label>
+          <select 
+            id="multifocal"
+            name="multifocal" 
+            required 
+            aria-required="true"
+            className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent">
             <option value="">Select…</option>
-            <option>Yes</option>
-            <option>No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
         </div>
       </div>
 
-      {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
+      {error && (
+        <div role="alert" className="mt-3 p-2 bg-red-50 border border-red-200 rounded">
+          <p className="text-sm text-red-700">{error}</p>
+        </div>
+      )}
 
       <button
         type="submit"
         disabled={submitting}
-        className="mt-4 w-full rounded-2xl bg-[#3399FF] px-4 py-3 font-semibold text-white transition hover:bg-[#1D4262] disabled:opacity-50 shadow-lg"
+        className="mt-4 w-full inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80 disabled:opacity-50 disabled:cursor-not-allowed"
+        aria-busy={submitting}
       >
         {submitting ? 'Submitting…' : 'Join The Waitlist'}
       </button>
@@ -144,4 +200,3 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
     </form>
   );
 }
-

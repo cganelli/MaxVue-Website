@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MaxVue - Digital Vision Correction",
-  description: "AI-powered vision correction app that makes your screen match your eyesight—no reading glasses needed.",
+  title: "MaxVue — Digital Vision Correction for Mild Presbyopia",
+  description: "MaxVue digitally tunes on-screen text to reduce near-vision blur for many people with mild presbyopia or multifocal contacts. Join the waitlist for early access.",
   icons: {
     icon: "/favicon.png",
   },
