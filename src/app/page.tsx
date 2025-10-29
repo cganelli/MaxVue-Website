@@ -618,7 +618,7 @@ export default function Home() {
               Be one of the first to try MaxVue. Help shape what's next.
             </p>
             <a href="#join-waitlist" 
-               className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80 mb-6">
+               className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-white text-[#1D4262] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white hover:opacity-90 active:opacity-80 mb-6">
               Join the Waitlist
             </a>
             
