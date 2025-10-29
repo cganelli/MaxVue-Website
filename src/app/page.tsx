@@ -620,16 +620,17 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Hidden form for Netlify Forms detection */}
-      <form name="early-access" method="POST" data-netlify="true" netlify-honeypot="company" hidden>
+      {/* Hidden static form so Netlify detects it at build time */}
+      <form name="early-access" data-netlify="true" netlify-honeypot="company" hidden>
         <input type="hidden" name="form-name" value="early-access" />
-        <input type="text" name="company" />
-        <input type="text" name="first_name" />
-        <input type="text" name="last_name" />
-        <input type="email" name="email" />
-        <input type="text" name="smartphone" />
-        <input type="text" name="multifocal" />
+        <input name="company" />
+        <input name="first_name" />
+        <input name="last_name" />
+        <input name="email" type="email" />
+        <select name="smartphone"><option>iPhone</option><option>Android</option></select>
+        <select name="multifocal"><option>Yes</option><option>No</option></select>
         <input type="checkbox" name="hardware_interest" />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
