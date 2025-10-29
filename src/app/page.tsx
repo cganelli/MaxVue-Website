@@ -27,47 +27,28 @@ import {
   ChevronRight,
 } from "lucide-react";
 import NextImage from "next/image";
+import JoinEarlyAccessForm from "@/components/JoinEarlyAccessForm";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#eaf1fd]">
-      {/* Header */}
-      <header className="relative z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-3">
-            {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <NextImage
-                src="/maxvue_logo_transparent_bg.png"
-                alt="MaxVue Logo"
-                width={270}
-                height={90}
-                className="h-24 w-auto"
-              />
-            </div>
-
-            {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <a
-                href="/faq"
-                className="text-gray-700 hover:text-[#3399FF] transition-colors"
-              >
-                FAQs
-              </a>
-              <Button className="bg-[#3399FF] hover:bg-[#1D4262] text-white px-6 py-2 rounded-lg transition-colors text-lg">
-                Get Started
-              </Button>
-            </nav>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[#eaf1fd] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left content */}
             <div className="text-center lg:text-left">
+              {/* Logo */}
+              <div className="flex justify-start mb-6">
+                <NextImage
+                  src="/maxvue_logo_transparent_bg.png"
+                  alt="MaxVue Logo"
+                  width={540}
+                  height={180}
+                  className="h-48 w-auto"
+                />
+              </div>
+              
               {/* App icons row */}
               <div className="flex justify-center lg:justify-start items-center space-x-3 mb-8">
                 <Eye className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} />
@@ -81,31 +62,19 @@ export default function Home() {
                 <Image className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} />
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1e1e1e] mb-6 leading-tight">
-                <div className="whitespace-nowrap">Ditch the Glasses.</div>
-                <div className="whitespace-nowrap text-[#3399FF]">Real Vision Correction,</div>
-                <div className="whitespace-nowrap">Not Just Magnification.</div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                <div className="text-[#1e1e1e]">Sharper screens.</div>
+                <div className="text-[#3399FF]">Fewer squints.</div>
               </h1>
 
               <p className="text-xl text-gray-700 mb-8 max-w-2xl">
-                MaxVue applies actual prescription-strength optical correction to your entire phone screen. 
-                Like wearing glasses, but built into your device. Works across email, web, photos, camera, 
-                and apps automatically.
+                MaxVue digitally tunes on-screen text to reduce near-vision blur for many people with mild presbyopia or multifocal contacts.
               </p>
 
-              {/* Download buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button className="bg-[#3399FF] hover:bg-[#1D4262] text-white px-8 py-6 text-lg rounded-xl flex items-center space-x-2 transition-all">
-                  <Download className="w-6 h-6" />
-                  <span>Download for iOS</span>
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-[#3399FF] text-[#3399FF] hover:bg-[#3399FF] hover:text-white px-8 py-6 text-lg rounded-xl flex items-center space-x-2 transition-all"
-                >
-                  <Download className="w-6 h-6" />
-                  <span>Download for Android</span>
-                </Button>
+              <div className="mb-8">
+                <a href="#join-waitlist" className="inline-block bg-[#3399FF] px-6 py-3 font-semibold text-white transition hover:bg-[#1D4262] rounded-2xl shadow-lg">
+                  Join the Waitlist
+                </a>
               </div>
             </div>
 
@@ -155,7 +124,7 @@ export default function Home() {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <Check className="w-6 h-6 text-[#3399FF] mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-xl text-white">Applies real optical correction like prescription lenses</span>
+                  <span className="text-xl text-white">Applies real optical correction</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-6 h-6 text-[#3399FF] mt-0.5 mr-3 flex-shrink-0" />
@@ -193,17 +162,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* What MaxVue Does Section */}
       <section className="py-16 bg-[#eaf1fd]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1e1e1e] mb-6">
-              How MaxVue Works
+              What MaxVue Does
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              MaxVue uses advanced diopter-based lens correction (+0.00D to +3.5D) with real-time image processing. 
-              Unlike simple magnification, it simulates actual prescription lenses to fix blurry focus.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -213,12 +178,10 @@ export default function Home() {
                 <span className="text-2xl font-bold text-white">1</span>
               </div>
               <h3 className="text-2xl font-bold text-[#1e1e1e] mb-4">
-                Calibrate Your Vision
+                Personalized Screen Tuning
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Our interactive vision test uses real-time blur adjustment to find your optimal 
-                correction strength. Covers the full presbyopia range from +0.00D to +3.50D. Or, skip the test by 
-                entering your existing prescription if known.
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Uses a proprietary calibration to optimize weight, spacing, and edge contrast for your eyes.
               </p>
             </div>
 
@@ -228,11 +191,10 @@ export default function Home() {
                 <span className="text-2xl font-bold text-white">2</span>
               </div>
               <h3 className="text-2xl font-bold text-[#1e1e1e] mb-4">
-                Apply Real Lens Correction
+                Comfort Boost for Users
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                MaxVue calculates the precise diopter correction needed and applies mathematical lens simulation 
-                to your screen
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Less squinting and less pinch-to-zoom for everyday reading.
               </p>
             </div>
 
@@ -242,19 +204,56 @@ export default function Home() {
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
               <h3 className="text-2xl font-bold text-[#1e1e1e] mb-4">
-                System-Wide Enhancement
+                Works Where You Read
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Correction works across ALL apps - email, camera, web, photos - with one toggle. No app-by-app 
-                setup required
+              <p className="text-xl text-gray-700 leading-relaxed">
+                Email, messages, documents, articles, and most apps.
               </p>
             </div>
+          </div>
+          
+          <div className="mt-8 text-center max-w-3xl mx-auto">
+            <p className="text-gray-700 mb-6">
+              Results vary. People with mild near-vision blur or multifocal contacts often see the most benefit.
+            </p>
+            <a href="#join-waitlist" className="inline-block rounded-2xl bg-[#3399FF] px-6 py-3 font-semibold text-white transition hover:bg-[#1D4262] shadow-lg">
+              Join The Waitlist
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Coming Soon (R&D) Section */}
+      <section className="py-16 pb-8 bg-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold text-[#1e1e1e] mb-6">
+              Coming Soon (R&amp;D)
+            </h2>
+          </div>
+          
+          <div className="bg-[#eaf1fd] rounded-2xl p-8 md:p-12">
+            <h3 className="text-2xl font-bold text-[#1e1e1e] mb-4 text-center">
+              Prescription Strength Screen Protectors
+            </h3>
+            <p className="text-xl text-gray-700 mb-3">
+              We're exploring thin optical overlays to replace your phone screen protector that enhance clarity beyond software—aimed at users with stronger near-vision needs. 
+              If you're interested in accessory hardware when it's ready, join the waitlist.
+            </p>
+            <div className="mb-4 text-center">
+              <a href="#join-waitlist" className="inline-block rounded-2xl bg-[#3399FF] px-6 py-3 font-semibold text-white transition hover:bg-[#1D4262] shadow-lg">
+                Join the Waitlist
+              </a>
+            </div>
+            <p className="text-lg text-gray-600">
+              Note: We're testing options; availability and specs may change. We'll share honest results as we learn.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Real Optical Technology Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1e1e1e] mb-6">
@@ -351,7 +350,7 @@ export default function Home() {
       </section>
 
       {/* Perfect For Section */}
-      <section className="py-16 bg-[#eaf1fd]">
+      <section className="py-16 bg-[#eaf1fd] hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#1e1e1e] mb-6">
@@ -417,8 +416,81 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Get Early Access Section */}
+      <section id="join-waitlist" className="pt-8 pb-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-[1fr_1.25fr] gap-8 items-start">
+            <div>
+              <h2 className="text-4xl font-bold text-[#1e1e1e] mb-4">
+                Get Early Access
+              </h2>
+              <p className="text-xl text-gray-700 mb-8">
+                Be among the first to experience MaxVue.
+              </p>
+              <h3 className="text-2xl font-bold text-[#1e1e1e] mb-4">
+                What you'll get when you sign up
+              </h3>
+              <ul className="space-y-3 text-xl text-gray-700">
+                <li>• Early access to the MaxVue calibration beta</li>
+                <li>• Priority updates on our Screen Protector Add-Ons<br />&nbsp;&nbsp;&nbsp;program (for higher prescriptions)</li>
+                <li>• Launch pricing and exclusive invites</li>
+              </ul>
+            </div>
+            <div>
+              <JoinEarlyAccessForm />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-[#eaf1fd]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-[#1e1e1e] mb-8 text-center">FAQ</h2>
+          
+          <div className="space-y-6">
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-[#1e1e1e] mb-3">Will MaxVue replace my readers?</h3>
+              <p className="text-gray-700">
+                For many users with mild presbyopia, MaxVue reduces how often you need readers for phone tasks. 
+                It won't fully replace readers for everyone—especially higher prescriptions or low-light, tiny text scenarios.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-[#1e1e1e] mb-3">How is this different from zooming?</h3>
+              <p className="text-gray-700">
+                Zoom makes text bigger and it falls of the edge of the screen. MaxVue doesn't require you to scroll side to side. It also optimizes rendering (weight, spacing, edge contrast) based on your 
+                calibration to make text easier to resolve at typical phone distance.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-[#1e1e1e] mb-3">What if my prescription is stronger?</h3>
+              <p className="text-gray-700">
+                Software alone has limits. Join the Waitlist for updates on future accessory options.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-[#1e1e1e] mb-3">Is this a medical device?</h3>
+              <p className="text-gray-700">
+                No. MaxVue doesn't diagnose, treat, or cure any condition. If your vision changes, see an eye-care professional.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-bold text-[#1e1e1e] mb-3">Will MaxVue change my photos or videos?</h3>
+              <p className="text-gray-700">
+                We prioritize text clarity. Images and videos are minimally altered.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section className="py-10 bg-white">
+      <section className="py-10 bg-white hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#1e1e1e] mb-4">
@@ -515,71 +587,30 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[#1e1e1e] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <div className="mb-4">
-                <NextImage
-                  src="/maxvue_logo_transparent_bg.png"
-                  alt="MaxVue Logo"
-                  width={270}
-                  height={90}
-                  className="h-24 w-auto filter brightness-0 invert"
-                />
-              </div>
-              <p className="text-white mb-4 max-w-md font-bold">
-                Digital vision correction for the modern world.
-                <br />
-                See clearly without glasses.
-              </p>
+          <div className="flex flex-col items-center text-center">
+            <div className="mb-2">
+              <NextImage
+                src="/maxvue_logo_transparent_bg.png"
+                alt="MaxVue Logo"
+                width={270}
+                height={90}
+                className="h-24 w-auto filter brightness-0 invert"
+              />
             </div>
-            <div className="flex flex-col justify-end">
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href="/faq"
-                    className="text-white hover:text-[#3399FF] transition-colors font-bold"
-                  >
-                    FAQs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/legal#privacy-policy"
-                    className="text-white hover:text-[#3399FF] transition-colors font-bold"
-                  >
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/legal#terms-of-use"
-                    className="text-white hover:text-[#3399FF] transition-colors font-bold"
-                  >
-                    Terms of Use
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col justify-end space-y-4">
-              <a href="#" className="hover:opacity-80 transition-opacity">
-                <NextImage
-                  src="/Apple-app-store.png"
-                  alt="Download on the App Store"
-                  width={150}
-                  height={44}
-                  className="w-[150px] h-auto"
-                />
-              </a>
-              <a href="#" className="hover:opacity-80 transition-opacity">
-                <NextImage
-                  src="/Google-play-store.png"
-                  alt="Get it on Google Play"
-                  width={150}
-                  height={44}
-                  className="w-[150px] h-auto"
-                />
-              </a>
-            </div>
+            <p className="text-white mb-4 font-bold text-lg">
+              Sharper screens. Fewer squints.
+            </p>
+            
+            <p className="text-white mb-4 text-lg">
+              Be one of the first to try MaxVue. Help shape what's next.
+            </p>
+            <a href="#join-waitlist" className="inline-block rounded-2xl bg-[#3399FF] px-6 py-3 font-semibold text-white transition hover:bg-[#1D4262] shadow-lg mb-6">
+              Join the Waitlist
+            </a>
+            
+            <p className="text-gray-400 text-sm max-w-4xl">
+              MaxVue is not a medical device and is not a replacement for an eye exam. Individual results vary. <span className="font-medium">Clarity Promise:</span> No hype. We'll share measured results and clear limits.
+            </p>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-white font-bold">
@@ -588,6 +619,18 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Hidden form for Netlify Forms detection */}
+      <form name="early-access" method="POST" data-netlify="true" netlify-honeypot="company" hidden>
+        <input type="hidden" name="form-name" value="early-access" />
+        <input type="text" name="company" />
+        <input type="text" name="first_name" />
+        <input type="text" name="last_name" />
+        <input type="email" name="email" />
+        <input type="text" name="smartphone" />
+        <input type="text" name="multifocal" />
+        <input type="checkbox" name="hardware_interest" />
+      </form>
     </div>
   );
 }
