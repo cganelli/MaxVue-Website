@@ -43,9 +43,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[#eaf1fd] py-5 max-h-[70vh]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div className="grid lg:grid-cols-2 gap-8 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left content */}
-            <div className="text-center lg:text-left">
+            <div className="text-center lg:text-left flex flex-col justify-center">
               {/* Logo */}
               <div className="flex justify-start mb-4">
                 <NextImage
