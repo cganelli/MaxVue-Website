@@ -643,13 +643,13 @@ export default function Home() {
       {/* Hidden static form so Netlify detects it at build time */}
       <form name="early-access" data-netlify="true" netlify-honeypot="company" hidden>
         <input type="hidden" name="form-name" value="early-access" />
-        <input name="company" />
-        <input name="first_name" />
-        <input name="last_name" />
-        <input name="email" type="email" />
-        <select name="smartphone"><option>iPhone</option><option>Android</option></select>
-        <select name="multifocal"><option>Yes</option><option>No</option></select>
-        <input type="checkbox" name="hardware_interest" />
+        <input name="company" autoComplete="off" />
+        <input name="first_name" autoComplete="given-name" />
+        <input name="last_name" autoComplete="family-name" />
+        <input name="email" type="email" autoComplete="email" />
+        <select name="smartphone" autoComplete="off"><option>iPhone</option><option>Android</option></select>
+        <select name="multifocal" autoComplete="off"><option>Yes</option><option>No</option></select>
+        <input type="checkbox" name="hardware_interest" autoComplete="off" />
         <button type="submit">Submit</button>
       </form>
     </div>
