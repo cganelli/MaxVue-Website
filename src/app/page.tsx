@@ -41,8 +41,8 @@ export default function Home() {
       <div className="min-h-screen bg-[#eaf1fd]">
         <main id="main-content">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#eaf1fd] py-5 max-h-[70vh]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+      <section className="relative bg-[#eaf1fd] py-5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left content */}
             <div className="text-center lg:text-left flex flex-col justify-center">
