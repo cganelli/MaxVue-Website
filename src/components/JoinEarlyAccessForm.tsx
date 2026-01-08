@@ -103,7 +103,7 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
       <input type="hidden" name="form-name" value="early-access" />
       <p className="hidden">
         <label htmlFor="company-field">
-          Don't fill this out if you're human: <input id="company-field" name="company" tabIndex={-1} />
+          Don't fill this out if you're human: <input id="company-field" name="company" autoComplete="off" tabIndex={-1} />
         </label>
       </p>
 
@@ -116,6 +116,7 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
             id="first-name"
             name="first_name" 
             type="text"
+            autoComplete="given-name"
             required 
             aria-required="true"
             aria-invalid={error ? "true" : "false"}
@@ -131,6 +132,7 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
             id="last-name"
             name="last_name" 
             type="text"
+            autoComplete="family-name"
             required 
             aria-required="true"
             aria-invalid={error ? "true" : "false"}
@@ -145,7 +147,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
           <input 
             id="email-address"
             name="email" 
-            type="email" 
+            type="email"
+            autoComplete="email"
             required 
             aria-required="true"
             aria-invalid={error ? "true" : "false"}
@@ -159,7 +162,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
           </label>
           <select 
             id="smartphone"
-            name="smartphone" 
+            name="smartphone"
+            autoComplete="off"
             required 
             aria-required="true"
             aria-invalid={error ? "true" : "false"}
@@ -176,7 +180,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
           </label>
           <select 
             id="multifocal"
-            name="multifocal" 
+            name="multifocal"
+            autoComplete="off"
             required 
             aria-required="true"
             aria-invalid={error ? "true" : "false"}
