@@ -43,22 +43,22 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[#eaf1fd] py-7">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left content */}
             <div className="text-center lg:text-left">
               {/* Logo */}
-              <div className="flex justify-start mb-6">
+              <div className="flex justify-start mb-4">
                 <NextImage
                   src="/maxvue_logo_transparent_bg.png"
                   alt="MaxVue - Digital Vision Correction for Mild Presbyopia"
                   width={540}
                   height={180}
-                  className="h-48 w-auto"
+                  className="h-36 w-auto"
                 />
               </div>
               
               {/* App icons row */}
-              <div className="flex justify-center lg:justify-start items-center space-x-3 mb-8" aria-hidden="true">
+              <div className="flex justify-center lg:justify-start items-center space-x-3 mb-5" aria-hidden="true">
                 <Eye className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
                 <Smartphone
                   className="w-8 h-8 text-[#3399FF]"
@@ -71,16 +71,16 @@ export default function Home() {
                 <Image className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
                 <div className="text-[#1e1e1e]">Sharper screens.</div>
                 <div className="text-[#1D4262]">Fewer squints.</div>
               </h1>
 
-              <p className="text-xl text-gray-700 mb-8 max-w-2xl">
+              <p className="text-xl text-gray-700 mb-5 max-w-2xl">
                 MaxVue digitally tunes on-screen text to reduce near-vision blur for many people with mild presbyopia or multifocal contacts.
               </p>
 
-              <div className="mb-8">
+              <div className="mb-5">
                 <a href="#join-waitlist" 
                    className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80">
                   Join the Waitlist
