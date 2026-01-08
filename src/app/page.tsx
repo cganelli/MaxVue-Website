@@ -88,21 +88,17 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right content - Phone mockup with embedded HTML */}
+            {/* Right content - Phone mockup with SVG */}
             <div className="relative flex justify-center lg:justify-end">
               <div className="relative">
                 {/* Phone frame */}
                 <div className="w-80 h-[630px] bg-black rounded-[3rem] p-3 shadow-2xl">
                   <div className="w-full h-full rounded-[2.5rem] overflow-hidden relative">
-                    <iframe
-                      src="/maxvue-homepage-embed.html"
-                      className="w-full h-full border-0 rounded-[2.5rem]"
-                      title="MaxVue App Demo"
-                      loading="lazy"
+                    <img
+                      src="/FINAL_iphone_wiki_before_after.svg"
+                      alt="MaxVue before and after comparison showing iPhone screen"
+                      className="w-full h-full object-contain rounded-[2.5rem]"
                       style={{
-                        width: "100%",
-                        height: "100%",
-                        aspectRatio: "9/16",
                         transform: "scale(1.2) translateY(15px)",
                         transformOrigin: "center center",
                       }}
