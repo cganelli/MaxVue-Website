@@ -92,9 +92,10 @@ export default function Home() {
             <div className="relative flex justify-center lg:justify-end">
               <img
                 src="/!FINAL _iphone _wiki _before_after.svg"
-                alt="MaxVue before and after comparison showing iPhone screen"
+                alt="Before and after comparison showing blurred text on the left and sharp, clear text on the right, demonstrating MaxVue's vision correction effect on a Wikipedia article about presbyopia"
                 className="w-full max-w-md h-auto scale-75"
                 style={{ maxHeight: '52.5%' }}
+                loading="lazy"
               />
             </div>
           </div>
