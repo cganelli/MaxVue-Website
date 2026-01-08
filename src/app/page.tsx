@@ -91,7 +91,7 @@ export default function Home() {
             {/* Right content - SVG image */}
             <div className="relative flex justify-center lg:justify-end">
               <img
-                src="/FINAL_iphone_wiki_before_after.svg"
+                src="/!FINAL _iphone _wiki _before_after.svg"
                 alt="MaxVue before and after comparison showing iPhone screen"
                 className="w-full max-w-lg h-auto"
               />
