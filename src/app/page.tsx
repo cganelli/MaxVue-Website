@@ -93,7 +93,7 @@ export default function Home() {
               <img
                 src="/!FINAL _iphone _wiki _before_after.svg"
                 alt="MaxVue before and after comparison showing iPhone screen"
-                className="w-full max-w-lg h-auto"
+                className="w-full max-w-lg h-auto scale-75"
               />
             </div>
           </div>
