@@ -118,6 +118,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
             type="text"
             required 
             aria-required="true"
+            aria-invalid={error ? "true" : "false"}
+            aria-describedby={error ? "form-error" : undefined}
             className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent" 
           />
         </div>
@@ -131,6 +133,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
             type="text"
             required 
             aria-required="true"
+            aria-invalid={error ? "true" : "false"}
+            aria-describedby={error ? "form-error" : undefined}
             className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent" 
           />
         </div>
@@ -144,6 +148,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
             type="email" 
             required 
             aria-required="true"
+            aria-invalid={error ? "true" : "false"}
+            aria-describedby={error ? "form-error" : undefined}
             className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent" 
           />
         </div>
@@ -156,6 +162,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
             name="smartphone" 
             required 
             aria-required="true"
+            aria-invalid={error ? "true" : "false"}
+            aria-describedby={error ? "form-error" : undefined}
             className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent">
             <option value="">Select…</option>
             <option value="iPhone">iPhone</option>
@@ -171,6 +179,8 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
             name="multifocal" 
             required 
             aria-required="true"
+            aria-invalid={error ? "true" : "false"}
+            aria-describedby={error ? "form-error" : undefined}
             className="mt-1 w-full rounded-xl border p-2 focus:outline-none focus:ring-2 focus:ring-[#1D4262] focus:border-transparent">
             <option value="">Select…</option>
             <option value="Yes">Yes</option>
@@ -180,7 +190,7 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
       </div>
 
       {error && (
-        <div role="alert" className="mt-3 p-2 bg-red-50 border border-red-200 rounded">
+        <div id="form-error" role="alert" className="mt-3 p-2 bg-red-50 border border-red-200 rounded">
           <p className="text-sm text-red-700">{error}</p>
         </div>
       )}

@@ -40,8 +40,8 @@ export default function Home() {
       
       <div className="min-h-screen bg-[#eaf1fd]">
         <main id="main-content">
-          {/* Hero Section */}
-          <section className="relative overflow-hidden bg-[#eaf1fd] py-10">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-[#eaf1fd] py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left content */}
@@ -50,7 +50,7 @@ export default function Home() {
               <div className="flex justify-start mb-6">
                 <NextImage
                   src="/maxvue_logo_transparent_bg.png"
-                  alt="MaxVue Logo"
+                  alt="MaxVue - Digital Vision Correction for Mild Presbyopia"
                   width={540}
                   height={180}
                   className="h-48 w-auto"
@@ -58,21 +58,22 @@ export default function Home() {
               </div>
               
               {/* App icons row */}
-              <div className="flex justify-center lg:justify-start items-center space-x-3 mb-8">
-                <Eye className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} />
+              <div className="flex justify-center lg:justify-start items-center space-x-3 mb-8" aria-hidden="true">
+                <Eye className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
                 <Smartphone
                   className="w-8 h-8 text-[#3399FF]"
                   strokeWidth={1.5}
+                  aria-hidden="true"
                 />
-                <Monitor className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} />
-                <Globe className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} />
-                <Camera className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} />
-                <Image className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} />
+                <Monitor className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
+                <Globe className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
+                <Camera className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
+                <Image className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 <div className="text-[#1e1e1e]">Sharper screens.</div>
-                <div className="text-[#3399FF]">Fewer squints.</div>
+                <div className="text-[#1D4262]">Fewer squints.</div>
               </h1>
 
               <p className="text-xl text-gray-700 mb-8 max-w-2xl">
@@ -597,19 +598,19 @@ export default function Home() {
 
         </main>
 
-        {/* Footer */}
+      {/* Footer */}
         <footer role="contentinfo" className="bg-[#1e1e1e] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             <div className="mb-2">
-              <NextImage
-                src="/maxvue_logo_transparent_bg.png"
-                alt="MaxVue Logo"
-                width={270}
-                height={90}
-                className="h-24 w-auto filter brightness-0 invert"
-              />
-            </div>
+                <NextImage
+                  src="/maxvue_logo_transparent_bg.png"
+                  alt="MaxVue Logo"
+                  width={270}
+                  height={90}
+                  className="h-24 w-auto filter brightness-0 invert"
+                />
+              </div>
             <p className="text-white mb-4 font-bold text-lg">
               Sharper screens. Fewer squints.
             </p>
@@ -646,7 +647,7 @@ export default function Home() {
         <input type="checkbox" name="hardware_interest" />
         <button type="submit">Submit</button>
       </form>
-      </div>
+    </div>
     </>
   );
 }
