@@ -629,7 +629,7 @@ export default function Home() {
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-white font-bold mb-4">
-              © 2025 MaxVue. All rights reserved.
+              © 2026 MaxVue. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm">
               <a href="/accessibility" className="text-white hover:text-[#3399FF] transition-colors underline underline-offset-4">

@@ -1,6 +1,6 @@
 # WCAG 2.2 Level AA Accessibility Audit
 
-**Date:** January 2025  
+**Date:** January 2026  
 **Auditor:** Automated Code Review + Manual Assessment  
 **Standard:** WCAG 2.2 Level AA  
 **Scope:** Homepage (`/src/app/page.tsx`) and Early Access Form (`/src/components/JoinEarlyAccessForm.tsx`)
@@ -462,6 +462,6 @@ npx lighthouse http://localhost:3001 --only-categories=accessibility --output=js
 
 ---
 
-**Last Updated:** January 2025  
-**Next Audit Due:** April 2025
+**Last Updated:** January 2026  
+**Next Audit Due:** April 2026
 

@@ -22,9 +22,9 @@ export default function AccessibilityPage() {
         </h1>
 
         <div className="prose prose-lg max-w-none">
-          <p className="text-lg text-gray-700 mb-6">
-            <strong>Last Updated:</strong> January 2025
-          </p>
+            <p className="text-lg text-gray-700 mb-6">
+              <strong>Last Updated:</strong> January 2026
+            </p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-[#1e1e1e] mb-4">
@@ -163,7 +163,7 @@ export default function AccessibilityPage() {
             <p className="text-gray-700 mb-4">
               We will review and update this accessibility statement regularly to reflect any 
               changes to our website or improvements in our accessibility efforts. This statement 
-              was last updated in January 2025.
+              was last updated in January 2026.
             </p>
           </section>
 
