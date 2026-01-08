@@ -5,6 +5,14 @@
 [build.environment]
   NODE_VERSION = "20.10.0"
 
+# Headers for embed HTML (allows iframe embedding)
+[[headers]]
+  for = "/maxvue-homepage-embed.html"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;"
+
+# Headers for all other pages
 [[headers]]
   for = "/*"
   [headers.values]
