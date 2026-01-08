@@ -41,9 +41,9 @@ export default function Home() {
       <div className="min-h-screen bg-[#eaf1fd]">
         <main id="main-content">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#eaf1fd] py-7">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+      <section className="relative overflow-hidden bg-[#eaf1fd] py-5 max-h-[70vh]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left content */}
             <div className="text-center lg:text-left">
               {/* Logo */}
@@ -93,7 +93,8 @@ export default function Home() {
               <img
                 src="/!FINAL _iphone _wiki _before_after.svg"
                 alt="MaxVue before and after comparison showing iPhone screen"
-                className="w-full max-w-lg h-auto scale-75"
+                className="w-full max-w-md h-auto"
+                style={{ maxHeight: '70%' }}
               />
             </div>
           </div>
