@@ -41,7 +41,7 @@ export default function Home() {
       <div className="min-h-screen bg-[#eaf1fd]">
         <main id="main-content">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#eaf1fd] py-10">
+      <section className="relative overflow-hidden bg-[#eaf1fd] py-7">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left content */}
