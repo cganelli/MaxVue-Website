@@ -41,7 +41,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#eaf1fd]">
         <main id="main-content">
       {/* Hero Section */}
-      <section className="relative bg-[#eaf1fd] py-0 max-h-[75vh] overflow-hidden flex items-center">
+      <section className="relative bg-[#eaf1fd] max-h-[90vh] overflow-hidden flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 w-full">
           <div className="grid lg:grid-cols-2 gap-1.5 items-center">
             {/* Left content */}
@@ -76,9 +76,8 @@ export default function Home() {
                 <div className="text-[#1D4262]">Fewer squints.</div>
               </h1>
 
-              <p className="text-lg text-gray-700 mb-0.5 max-w-2xl">
-                MaxVue digitally tunes on-screen text to reduce near-vision blur for<br />
-                many people with mild presbyopia or multifocal contacts.
+              <p className="text-xl text-gray-700 mb-0.5 max-w-2xl">
+                MaxVue digitally tunes on-screen text to reduce near-vision blur for many people with mild presbyopia or multifocal contacts.
               </p>
 
               <div className="mb-0">
