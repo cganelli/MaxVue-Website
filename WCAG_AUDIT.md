@@ -216,11 +216,16 @@ The MaxVue website demonstrates strong accessibility implementation with proper 
 |---------|--------|----------------|
 | Error messages | ✅ PASS | `role="alert"` on error container |
 | Error visibility | ✅ PASS | Errors displayed in red with clear messaging |
-| Error association | ⚠️ PARTIAL | Could use `aria-describedby` to link errors to fields |
+| Error association | ✅ PASS | `aria-describedby="form-error"` links errors to fields |
+| Field validation | ✅ PASS | `aria-invalid` attributes on form fields |
+| Client-side validation | ✅ PASS | Validates required fields (first name, last name, email) before submission |
 
-**Recommendations:**
-- Add `aria-describedby` to form fields linking to error messages
-- Add `aria-invalid="true"` to fields with errors
+**Implementation Details (January 2026):**
+- ✅ Added client-side validation for required fields (first name, last name, email)
+- ✅ Specific error messages for each missing required field
+- ✅ Email format validation with regex
+- ✅ All form fields have `aria-describedby` linking to error container
+- ✅ All form fields have `aria-invalid` attributes that update based on error state
 
 ### 3.3.2 Labels or Instructions (Level A) ✅ **PASS**
 
@@ -314,6 +319,7 @@ The MaxVue website demonstrates strong accessibility implementation with proper 
    - **Issue:** Error messages not explicitly linked to form fields
    - **Location:** `src/components/JoinEarlyAccessForm.tsx`
    - **Status:** ✅ Fixed - Added `aria-describedby="form-error"` and `aria-invalid` to all form fields
+   - **Additional (January 2026):** ✅ Added client-side validation for required fields (first name, last name, email) with specific error messages and email format validation
 
 4. **Emoji in Success Message** (Priority: Low)
    - **Issue:** Emoji (✅) may not be announced by screen readers
@@ -440,6 +446,7 @@ npx lighthouse http://localhost:3001 --only-categories=accessibility --output=js
 ### Medium Priority
 3. [x] ✅ **FIXED** - Added `aria-describedby` to form fields linking to error messages
 4. [x] ✅ **FIXED** - Enhanced logo alt text to "MaxVue - Digital Vision Correction for Mild Presbyopia"
+5. [x] ✅ **FIXED** - Added client-side validation for required form fields (first name, last name, email) with specific error messages
 
 ### Low Priority
 5. [ ] Replace or label emoji in success message
