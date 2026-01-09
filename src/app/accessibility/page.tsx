@@ -22,22 +22,12 @@ export default function AccessibilityPage() {
         </h1>
 
         <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-gray-700 mb-6">
-              <strong>Last Updated:</strong> January 2026
-            </p>
-
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-[#1e1e1e] mb-4">
               Our Commitment
             </h2>
             <p className="text-gray-700 mb-4">
-              MaxVue is committed to ensuring digital accessibility for people with disabilities. 
-              We are continually improving the user experience for everyone and applying the relevant 
-              accessibility standards to achieve these goals.
-            </p>
-            <p className="text-gray-700 mb-4">
-              We believe in providing an inclusive experience that enables all users to access and 
-              use our website, regardless of their abilities or the assistive technologies they use.
+              MaxVue is dedicated to ensuring digital accessibility for people with disabilities. We strive to provide an inclusive experience that allows all users to access and use our website, regardless of their abilities or the assistive technologies they use. We are continually improving the user experience for everyone and applying the relevant accessibility standards to achieve these goals.
             </p>
           </section>
 
@@ -46,49 +36,26 @@ export default function AccessibilityPage() {
               Conformance Status
             </h2>
             <p className="text-gray-700 mb-4">
-              The Web Content Accessibility Guidelines (WCAG) defines requirements for designers 
-              and developers to improve accessibility for people with disabilities. It defines three 
-              levels of conformance: Level A, Level AA, and Level AAA.
-            </p>
-            <p className="text-gray-700 mb-4">
-              <strong>MaxVue website is fully conformant with WCAG 2.2 Level AA.</strong> Fully 
-              conformant means that the content fully conforms to the accessibility standard without 
-              any exceptions.
+              The Web Content Accessibility Guidelines (WCAG) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. Our goal is to maintain substantial conformance with WCAG 2.2 Level AA. We view accessibility as an ongoing effort and perform regular reviews to ensure we are meeting these standards.
             </p>
             <div className="bg-[#eaf1fd] rounded-xl p-6 mb-4">
               <h3 className="text-xl font-semibold text-[#1e1e1e] mb-3">
                 Our Accessibility Features
               </h3>
+              <p className="text-gray-700 mb-3">
+                To support an accessible experience, our site incorporates features designed for compatibility with assistive software:
+              </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                <li>Semantic HTML structure with proper landmarks</li>
-                <li>Keyboard navigation support with visible focus indicators</li>
-                <li>Skip link for bypassing repetitive content</li>
-                <li>Proper form labeling and error association</li>
-                <li>ARIA attributes for screen reader compatibility</li>
-                <li>High color contrast ratios (minimum 4.5:1 for normal text, 3:1 for large text)</li>
-                <li>Responsive design that works at all screen sizes</li>
-                <li>Text that can be resized up to 200% without loss of functionality</li>
-                <li>Alternative text for images</li>
-                <li>Clear error messages and form validation</li>
+                <li>Semantic HTML structure with proper landmarks to assist navigation.</li>
+                <li>Keyboard navigation support with visible focus indicators.</li>
+                <li>Skip links for bypassing repetitive content.</li>
+                <li>ARIA attributes to enhance compatibility with screen readers.</li>
+                <li>High color contrast ratios aiming for a minimum of 4.5:1 for normal text.</li>
+                <li>Responsive design that works across various devices and screen sizes.</li>
+                <li>Text that can be resized up to 200% without loss of functionality.</li>
+                <li>Alternative text for images and clear form labeling with error association.</li>
               </ul>
             </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-[#1e1e1e] mb-4">
-              Feedback
-            </h2>
-            <p className="text-gray-700 mb-4">
-              We welcome your feedback on the accessibility of the MaxVue website. Please let us 
-              know if you encounter accessibility barriers:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
-              <li><strong>Email:</strong> accessibility@maxvue.app</li>
-              <li><strong>Phone:</strong> (Please contact us through our main contact form)</li>
-            </ul>
-            <p className="text-gray-700 mb-4">
-              We try to respond to feedback within 5 business days.
-            </p>
           </section>
 
           <section className="mb-8">
@@ -96,38 +63,13 @@ export default function AccessibilityPage() {
               Compatibility with Assistive Technologies
             </h2>
             <p className="text-gray-700 mb-4">
-              The MaxVue website is designed to be compatible with the following assistive technologies:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
-              <li>Screen readers (NVDA, JAWS, VoiceOver)</li>
-              <li>Keyboard-only navigation</li>
-              <li>Voice control software</li>
-              <li>Screen magnification software</li>
-              <li>Browser zoom up to 200%</li>
-            </ul>
-            <p className="text-gray-700 mb-4">
-              The website should be compatible with assistive technologies on the following browsers:
+              The MaxVue website is designed to be compatible with standard assistive technologies, including:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Chrome (latest version)</li>
-              <li>Firefox (latest version)</li>
-              <li>Safari (latest version)</li>
-              <li>Edge (latest version)</li>
+              <li>Screen readers such as NVDA, JAWS, and VoiceOver.</li>
+              <li>Keyboard-only navigation and voice control software.</li>
+              <li>Modern browsers including the latest versions of Chrome, Firefox, Safari, and Edge.</li>
             </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-[#1e1e1e] mb-4">
-              Known Issues and Limitations
-            </h2>
-            <p className="text-gray-700 mb-4">
-              Despite our best efforts to ensure accessibility, there may be some limitations. 
-              We are actively working to address these issues and improve our website's accessibility.
-            </p>
-            <p className="text-gray-700 mb-4">
-              If you encounter any accessibility barriers, please contact us using the information 
-              provided above.
-            </p>
           </section>
 
           <section className="mb-8">
@@ -135,25 +77,26 @@ export default function AccessibilityPage() {
               Assessment Approach
             </h2>
             <p className="text-gray-700 mb-4">
-              MaxVue assessed the accessibility of this website through the following approaches:
+              MaxVue evaluates the accessibility of this website through a systematic internal process:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>Self-evaluation using automated tools (pa11y, Lighthouse)</li>
-              <li>Manual code review against WCAG 2.2 Level AA criteria</li>
-              <li>Testing with keyboard-only navigation</li>
-              <li>Testing with screen reader software</li>
+              <li>Automated accessibility audits using industry-standard tools and AI-assisted code reviews.</li>
+              <li>Manual keyboard-only navigation testing to ensure all interactive elements are reachable without a mouse.</li>
+              <li>Code-level analysis against WCAG 2.2 Level AA criteria to identify and remediate potential barriers.</li>
             </ul>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-[#1e1e1e] mb-4">
-              Formal Complaints
+              Feedback
             </h2>
             <p className="text-gray-700 mb-4">
-              If you are not satisfied with our response to your accessibility concern, you may 
-              file a formal complaint. We are committed to resolving accessibility issues in a 
-              timely manner.
+              We welcome your feedback on the accessibility of the MaxVue website. Please let us know if you encounter accessibility barriers:
             </p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
+              <li><strong>Email:</strong> accessibility@maxvue.app</li>
+              <li><strong>Response Time:</strong> We aim to respond to accessibility-related feedback within 5 business days.</li>
+            </ul>
           </section>
 
           <section className="mb-8">
@@ -161,9 +104,7 @@ export default function AccessibilityPage() {
               Updates to This Statement
             </h2>
             <p className="text-gray-700 mb-4">
-              We will review and update this accessibility statement regularly to reflect any 
-              changes to our website or improvements in our accessibility efforts. This statement 
-              was last updated in January 2026.
+              We review and update this accessibility statement regularly to reflect our ongoing efforts and improvements. This statement was last updated in January 2026.
             </p>
           </section>
 
@@ -180,4 +121,3 @@ export default function AccessibilityPage() {
     </main>
   );
 }
-

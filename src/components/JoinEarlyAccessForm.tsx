@@ -39,6 +39,38 @@ export default function JoinEarlyAccessForm({ precheckHardware }: Props) {
 
     try {
       const form = formRef.current!;
+      
+      // Validate required fields before submission
+      const firstName = (form.querySelector('[name="first_name"]') as HTMLInputElement)?.value.trim();
+      const lastName = (form.querySelector('[name="last_name"]') as HTMLInputElement)?.value.trim();
+      const email = (form.querySelector('[name="email"]') as HTMLInputElement)?.value.trim();
+
+      if (!firstName) {
+        setError('First name is required.');
+        setSubmitting(false);
+        return;
+      }
+
+      if (!lastName) {
+        setError('Last name is required.');
+        setSubmitting(false);
+        return;
+      }
+
+      if (!email) {
+        setError('Email address is required.');
+        setSubmitting(false);
+        return;
+      }
+
+      // Basic email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        setError('Please enter a valid email address.');
+        setSubmitting(false);
+        return;
+      }
+
       const formData = new FormData(form);
       // Netlify requires this
       formData.set('form-name', 'early-access');

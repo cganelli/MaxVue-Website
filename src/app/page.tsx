@@ -38,63 +38,63 @@ export default function Home() {
         Skip to main content
       </a>
       
-      <div className="min-h-screen bg-[#eaf1fd]">
+    <div className="min-h-screen bg-[#eaf1fd]">
         <main id="main-content">
       {/* Hero Section */}
-      <section className="relative bg-[#eaf1fd] py-5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+      <section className="relative bg-[#eaf1fd] py-0 max-h-[75vh] overflow-hidden flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 w-full">
+          <div className="grid lg:grid-cols-2 gap-1.5 items-center">
             {/* Left content */}
-            <div className="text-center lg:text-left flex flex-col justify-center">
-              {/* Logo */}
-              <div className="flex justify-start mb-4">
-                <NextImage
-                  src="/maxvue_logo_transparent_bg.png"
+            <div className="text-center lg:text-left flex flex-col justify-center lg:pl-[25%]">
+            {/* Logo */}
+              <div className="flex justify-start mb-0.5">
+              <NextImage
+                src="/maxvue_logo_transparent_bg.png"
                   alt="MaxVue - Digital Vision Correction for Mild Presbyopia"
                   width={540}
                   height={180}
-                  className="h-36 w-auto"
-                />
-              </div>
-              
+                  className="h-[7.03125rem] w-auto"
+              />
+            </div>
+
               {/* App icons row */}
-              <div className="flex justify-center lg:justify-start items-center space-x-3 mb-5" aria-hidden="true">
-                <Eye className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
+              <div className="flex justify-center lg:justify-start items-center space-x-2 mb-0.5" aria-hidden="true">
+                <Eye className="w-6 h-6 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
                 <Smartphone
-                  className="w-8 h-8 text-[#3399FF]"
+                  className="w-6 h-6 text-[#3399FF]"
                   strokeWidth={1.5}
                   aria-hidden="true"
                 />
-                <Monitor className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
-                <Globe className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
-                <Camera className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
-                <Image className="w-8 h-8 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
+                <Monitor className="w-6 h-6 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
+                <Globe className="w-6 h-6 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
+                <Camera className="w-6 h-6 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
+                <Image className="w-6 h-6 text-[#3399FF]" strokeWidth={1.5} aria-hidden="true" />
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-0.5 leading-tight">
                 <div className="text-[#1e1e1e]">Sharper screens.</div>
                 <div className="text-[#1D4262]">Fewer squints.</div>
               </h1>
 
-              <p className="text-xl text-gray-700 mb-5 max-w-2xl">
-                MaxVue digitally tunes on-screen text to reduce near-vision blur for many people with mild presbyopia or multifocal contacts.
+              <p className="text-lg text-gray-700 mb-0.5 max-w-2xl">
+                MaxVue digitally tunes on-screen text to reduce near-vision blur for<br />
+                many people with mild presbyopia or multifocal contacts.
               </p>
 
-              <div className="mb-5">
+              <div className="mb-0">
                 <a href="#join-waitlist" 
-                   className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-base font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80">
+                   className="inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold bg-[#1D4262] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1D4262] hover:opacity-90 active:opacity-80">
                   Join the Waitlist
                 </a>
               </div>
             </div>
 
             {/* Right content - SVG image */}
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative flex justify-center lg:justify-end items-center">
               <img
                 src="/!FINAL _iphone _wiki _before_after.svg"
                 alt="Before and after comparison showing blurred text on the left and sharp, clear text on the right, demonstrating MaxVue's vision correction effect on a Wikipedia article about presbyopia"
-                className="w-full max-w-md h-auto scale-75"
-                style={{ maxHeight: '52.5%' }}
+                className="w-full max-w-md h-auto scale-[0.5625]"
                 loading="lazy"
               />
             </div>
