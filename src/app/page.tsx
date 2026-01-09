@@ -618,11 +618,15 @@ export default function Home() {
             <p className="text-white font-bold mb-4">
               © 2026 MaxVue. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-gray-400 text-sm">
               <a href="/accessibility" className="text-white hover:text-[#3399FF] transition-colors underline underline-offset-4">
                 Accessibility Statement
               </a>
-            </p>
+              <span className="hidden sm:inline text-gray-600">|</span>
+              <a href="/privacy" className="text-white hover:text-[#3399FF] transition-colors underline underline-offset-4">
+                Privacy Policy
+              </a>
+            </div>
           </div>
         </div>
       </footer>
